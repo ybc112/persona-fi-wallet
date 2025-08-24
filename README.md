@@ -1,242 +1,55 @@
-# 🚀 PersonaFi - AI Personality Trading Platform
+# 🤖 PersonaFi - AI个性化交易平台
 
-> **The first AI personality trading platform on Solana. Create, own, and profit from AI investment advisors.**
+> 基于Solana区块链的AI投资顾问NFT交易平台，将AI交易策略代币化为可交易的数字资产
 
-## ✨ Major Update - Web3 UI Redesign Complete!
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-13+-black)](https://nextjs.org/)
+[![Solana](https://img.shields.io/badge/Solana-Blockchain-purple)](https://solana.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9+-blue)](https://www.typescriptlang.org/)
 
-### 🎯 What's New
+## 🌟 项目概述
 
-- **🎨 Complete Web3 Design Overhaul**: Modern gradient-based UI with glassmorphism effects
-- **💰 Integrated Wallet Display**: Real-time SOL balance in navigation bar
-- **👤 Personal Center Dropdown**: Comprehensive user profile with wallet info
-- **🏪 AI Marketplace**: Browse and trade AI personalities
-- **🎭 AI Creator Studio**: Step-by-step AI personality creation
-- **🏆 Leaderboard**: Top performing AI personalities ranked by success
-- **🔧 Fixed Infinite Loop**: Resolved React useEffect dependency issues
+PersonaFi是一个革命性的去中心化平台，将AI投资顾问转化为可交易的NFT。用户可以创建、训练、交易和租赁个性化的AI交易助手，每个AI都具有独特的投资策略和性格特征。
 
-### 🌟 Core Features
+### 🎯 核心特性
 
-#### 🎭 **AI Personality Creation**
-- Choose from 6 AI archetypes (DeFi Expert, Meme Hunter, Conservative, etc.)
-- Customize risk levels and specializations
-- AI-generated avatars for each personality
-- NFT minting on Solana blockchain
+- **🧠 AI个性化训练** - 通过对话训练创建独特的AI投资顾问
+- **💎 NFT化交易** - 将AI策略铸造为NFT进行买卖和租赁
+- **📊 实时市场分析** - 集成Jupiter协议获取实时加密货币数据
+- **🏆 性能排行榜** - 基于真实交易表现的AI排名系统
+- **💬 智能对话** - 与AI顾问进行投资咨询和策略讨论
+- **🔄 自动交易执行** - AI可执行实际的交易操作
 
-#### 🏪 **AI Marketplace**
-- Browse AI personalities by type and performance
-- Real-time performance metrics and ratings
-- Buy, sell, and rent AI advisors
-- Verified creator badges
+## 🚀 技术栈
 
-#### 💰 **Revenue Sharing**
-- Smart contract-based profit distribution
-- AI owners earn from usage and trading
-- Transparent performance tracking
-- Automatic SOL payouts
+### 前端技术
+- **Next.js 13+** - React全栈框架
+- **TypeScript** - 类型安全的JavaScript
+- **Tailwind CSS** - 现代化CSS框架
+- **Web3Auth** - 用户身份验证
 
-#### 🏆 **Competitive Leaderboard**
-- Performance-based rankings
-- Win rate and volume metrics
-- Time-based filtering (24h, 7d, 30d, all-time)
-- Creator recognition system
+### 区块链技术
+- **Solana** - 高性能区块链网络
+- **Metaplex** - NFT标准和工具
+- **Jupiter Protocol** - DEX聚合器
+- **@solana/web3.js** - Solana JavaScript SDK
 
-## 🛠️ Tech Stack
+### 后端技术
+- **PostgreSQL** - 关系型数据库
+- **Prisma** - 数据库ORM
+- **DeepSeek API** - AI大语言模型
+- **IPFS** - 去中心化存储
 
-- **Frontend**: Next.js 15, React 18, TypeScript
-- **Styling**: Tailwind CSS with custom Web3 gradients
-- **Authentication**: Web3Auth Modal SDK (Social Login)
-- **Blockchain**: Solana Web3.js, SPL Token support
-- **UI/UX**: Glassmorphism, gradient backgrounds, responsive design
+## 📦 快速开始
 
-## 🚀 Quick Start
-
-### Prerequisites
+### 环境要求
 - Node.js 18+
-- npm or yarn
+- PostgreSQL 14+
+- Git
 
-### Installation
+### 安装步骤
 
-1. **Clone the repository**:
+1. **克隆项目**
 ```bash
-git clone <repository-url>
+git clone https://github.com/ybc112/persona-fi-wallet.git
 cd persona-fi-wallet
-```
-
-2. **Install dependencies**:
-```bash
-npm install
-```
-
-3. **Environment setup**:
-```bash
-cp .env.example .env.local
-```
-
-Add your Web3Auth Client ID to `.env.local`:
-```env
-NEXT_PUBLIC_WEB3AUTH_CLIENT_ID=your_client_id_here
-```
-
-4. **Start development server**:
-```bash
-npm run dev
-```
-
-5. **Open in browser**: [http://localhost:3000](http://localhost:3000)
-
-## 📱 Pages & Navigation
-
-### 🏠 **Homepage** (`/`)
-- Hero section with project introduction
-- Feature cards for core functionality
-- Statistics dashboard
-- Call-to-action based on wallet connection status
-
-### 🎭 **Create AI** (`/create`)
-- 3-step AI personality creation wizard
-- Personality selection with visual cards
-- Configuration settings (name, risk level, specialization)
-- Preview and minting interface
-
-### 🏪 **Marketplace** (`/marketplace`)
-- Grid layout of AI personalities
-- Filtering by type and sorting options
-- Performance metrics display
-- Buy/Preview functionality
-
-### 🏆 **Leaderboard** (`/leaderboard`)
-- Ranked list of top AI personalities
-- Performance metrics and win rates
-- Time-based filtering
-- Rank change indicators
-
-### 🧪 **Test Page** (`/test`)
-- Debug interface for development
-- Render count monitoring
-- Real-time logs
-- Infinite loop detection
-
-## 🎨 Design System
-
-### Color Palette
-- **Primary**: Purple gradients (`from-purple-600 to-pink-600`)
-- **Secondary**: Blue gradients (`from-blue-600 to-purple-600`)
-- **Background**: Dark gradients (`from-gray-900 via-purple-900 to-violet-900`)
-- **Accents**: Green (success), Red (error), Yellow (warning)
-
-### Components
-- **Glassmorphism cards**: `bg-black/20 backdrop-blur-sm`
-- **Gradient borders**: `border-purple-500/30`
-- **Hover effects**: Scale transforms and color transitions
-- **Responsive grid**: Mobile-first design approach
-
-## 🔧 Technical Improvements
-
-### ✅ **Fixed Infinite Loop Issue**
-- **Problem**: useEffect dependencies causing endless re-renders
-- **Solution**: Used useRef for stable function references
-- **Result**: Stable performance, no more browser crashes
-
-### 🎯 **Optimized Wallet Integration**
-- Real-time balance updates in navigation
-- Dropdown personal center with wallet details
-- Copy address functionality
-- Seamless Web3Auth integration
-
-### 📱 **Responsive Design**
-- Mobile-optimized navigation
-- Adaptive grid layouts
-- Touch-friendly interactions
-- Progressive enhancement
-
-## 🏗️ Project Structure
-
-```
-src/
-├── app/                    # Next.js app router
-│   ├── page.tsx           # Homepage
-│   ├── create/            # AI creation wizard
-│   ├── marketplace/       # AI trading platform
-│   ├── leaderboard/       # Performance rankings
-│   └── test/              # Debug interface
-├── components/
-│   ├── Navbar.tsx         # Navigation with wallet integration
-│   ├── WalletInfo.tsx     # Wallet information display
-│   └── ...
-├── contexts/
-│   └── Web3AuthContext.tsx # Authentication state
-├── hooks/
-│   └── useSolanaWallet.ts  # Wallet operations (FIXED)
-└── lib/
-    └── web3auth.ts        # Web3Auth configuration
-```
-
-## 🎯 PersonaFi Vision
-
-### **The Problem We Solve**
-1. **AI Investment Tools Lack Personalization**: Generic AI advisors don't meet individual needs
-2. **AI Value Can't Be Monetized**: Great AI strategies can't be directly traded
-3. **Investment Following Lacks Trust**: Traditional copy trading relies on emotional humans
-4. **NFTs Lack Utility**: Most NFTs are static images without real-world value
-
-### **Our Solution**
-- **AI Personalities as Assets**: First platform to make AI advisors tradeable
-- **Functional NFTs**: NFTs that actually work and generate income
-- **Decentralized AI Services**: Anyone can create and own AI services
-- **Revenue Sharing Economy**: Fair profit distribution through smart contracts
-
-### **Market Opportunity**
-- Copy Trading Market: $10B+
-- AI Services Market: $100B+
-- NFT Market: $20B+
-- **PersonaFi**: Creating entirely new market segment
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Push to GitHub
-2. Connect to Vercel
-3. Add environment variables
-4. Deploy automatically
-
-### Environment Variables
-```env
-NEXT_PUBLIC_WEB3AUTH_CLIENT_ID=your_web3auth_client_id
-```
-
-## 🐛 Troubleshooting
-
-### Common Issues
-1. **Infinite Refresh**: Fixed in latest update
-2. **Web3Auth Loading**: Check client ID configuration
-3. **RPC Errors**: Verify Solana devnet connection
-4. **Balance Not Updating**: Check wallet connection status
-
-### Debug Tools
-- Use `/test` page for debugging
-- Check browser console for errors
-- Monitor render counts and performance
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-- 📧 **Issues**: Create GitHub issue
-- 📚 **Docs**: Check Web3Auth and Solana documentation
-- 💬 **Community**: Join our Discord (coming soon)
-
----
-
-**Built with ❤️ for the Solana AI Hackathon 2024**
-
-> *PersonaFi - Where AI meets Web3, and everyone wins* 🚀
