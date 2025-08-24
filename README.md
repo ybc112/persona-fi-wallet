@@ -1,7 +1,6 @@
 # PersonaFi: AI Personality Trading Platform
 
 <div align="center">
-  <img src="./docs/logo.png" alt="PersonaFi Logo" width="200"/>
   
   **The first platform where AI personalities become tradable investment assets**
   
@@ -245,18 +244,13 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 - **界天日** - Full-stack Developer & AI Integration
   - GitHub: [@ybc112](https://github.com/ybc112) 
-  - Twitter: [@界天日世](https://twitter.com/界天日世)
+  - Twitter: [@界天日世](https://twitter.com/YBCYBC2003)
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Links
 
-- **Live Demo**: [https://personafi-demo.vercel.app](https://personafi-demo.vercel.app)
-- **Documentation**: [https://docs.personafi.com](https://docs.personafi.com)
-- **Twitter**: [@PersonaFi](https://twitter.com/PersonaFi)
-- **Discord**: [Join our community](https://discord.gg/personafi)
 
 ## 🙏 Acknowledgments
 
