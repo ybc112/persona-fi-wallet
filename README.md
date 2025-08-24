@@ -1,55 +1,275 @@
-# 🤖 PersonaFi - AI个性化交易平台
+# PersonaFi: AI Personality Trading Platform
 
-> 基于Solana区块链的AI投资顾问NFT交易平台，将AI交易策略代币化为可交易的数字资产
+<div align="center">
+  <img src="./docs/logo.png" alt="PersonaFi Logo" width="200"/>
+  
+  **The first platform where AI personalities become tradable investment assets**
+  
+  [![Demo](https://img.shields.io/badge/Demo-Live-green)](https://personafi-demo.vercel.app)
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+  [![Built with](https://img.shields.io/badge/Built%20with-React-61dafb)](https://reactjs.org/)
+  [![Blockchain](https://img.shields.io/badge/Blockchain-Solana-9945ff)](https://solana.com/)
+</div>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Next.js](https://img.shields.io/badge/Next.js-13+-black)](https://nextjs.org/)
-[![Solana](https://img.shields.io/badge/Solana-Blockchain-purple)](https://solana.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-4.9+-blue)](https://www.typescriptlang.org/)
+## 🚀 Overview
 
-## 🌟 项目概述
+PersonaFi revolutionizes the intersection of AI and Web3 by allowing users to create, own, and trade personalized AI investment advisors as NFTs. Each AI character has unique investment styles, generates market insights, and provides returns to both creators and users through transparent smart contract revenue sharing.
 
-PersonaFi是一个革命性的去中心化平台，将AI投资顾问转化为可交易的NFT。用户可以创建、训练、交易和租赁个性化的AI交易助手，每个AI都具有独特的投资策略和性格特征。
+### ✨ Key Features
 
-### 🎯 核心特性
+- 🤖 **AI Personality Creator**: Design custom AI investment advisors with unique styles and traits
+- 🎨 **AI-Generated Avatars**: Each AI character has a unique visual identity created by DALL-E
+- 📈 **Real-time Market Analysis**: AI agents provide personalized investment recommendations
+- 🎯 **NFT Marketplace**: Trade AI personalities as functional NFT assets
+- 💰 **Revenue Sharing**: Automated profit distribution through Solana smart contracts
+- 🔐 **Seamless Onboarding**: Web3Auth integration for frictionless user experience
 
-- **🧠 AI个性化训练** - 通过对话训练创建独特的AI投资顾问
-- **💎 NFT化交易** - 将AI策略铸造为NFT进行买卖和租赁
-- **📊 实时市场分析** - 集成Jupiter协议获取实时加密货币数据
-- **🏆 性能排行榜** - 基于真实交易表现的AI排名系统
-- **💬 智能对话** - 与AI顾问进行投资咨询和策略讨论
-- **🔄 自动交易执行** - AI可执行实际的交易操作
+## 🎯 Problem & Solution
 
-## 🚀 技术栈
+**Problem**: Current AI investment tools lack personalization, AI capabilities cannot be monetized, and NFTs lack functional value.
 
-### 前端技术
-- **Next.js 13+** - React全栈框架
-- **TypeScript** - 类型安全的JavaScript
-- **Tailwind CSS** - 现代化CSS框架
-- **Web3Auth** - 用户身份验证
+**Solution**: PersonaFi transforms AI intelligence into ownable, tradable digital assets that generate real value for creators, users, and the broader ecosystem.
 
-### 区块链技术
-- **Solana** - 高性能区块链网络
-- **Metaplex** - NFT标准和工具
-- **Jupiter Protocol** - DEX聚合器
-- **@solana/web3.js** - Solana JavaScript SDK
+## 🏗️ Architecture
 
-### 后端技术
-- **PostgreSQL** - 关系型数据库
-- **Prisma** - 数据库ORM
-- **DeepSeek API** - AI大语言模型
-- **IPFS** - 去中心化存储
+```
+Frontend (React + TypeScript)
+├── AI Personality Creator
+├── Market Analysis Dashboard  
+├── NFT Trading Marketplace
+└── Revenue Analytics
 
-## 📦 快速开始
+Smart Contracts (Solana)
+├── AI Character NFT Minting
+├── Revenue Distribution
+├── Marketplace Logic
+└── Staking & Rewards
 
-### 环境要求
-- Node.js 18+
-- PostgreSQL 14+
-- Git
+AI Services
+├── GPT-4 Market Analysis
+├── DALL-E Avatar Generation
+├── Real-time Data Processing
+└── Performance Tracking
+```
 
-### 安装步骤
+## 🛠️ Tech Stack
 
-1. **克隆项目**
+### Frontend
+- **Framework**: React 18 + TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand
+- **Web3 Integration**: Web3Auth SDK
+- **UI Components**: Custom components with Radix UI
+
+### Blockchain
+- **Network**: Solana Mainnet/Devnet
+- **Wallet**: Web3Auth Embedded Wallets
+- **NFT Standard**: Metaplex Token Metadata
+- **Smart Contracts**: Anchor Framework
+
+### AI & APIs
+- **Language Model**: OpenAI GPT-4
+- **Image Generation**: DALL-E 3
+- **Market Data**: CoinGecko API, Jupiter API
+- **Price Feeds**: Pyth Network
+
+### Infrastructure
+- **Deployment**: Vercel
+- **Database**: Supabase
+- **File Storage**: IPFS via Pinata
+- **Analytics**: Custom dashboard
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- Solana CLI tools
+- Web3Auth project credentials
+
+### Installation
+
+1. **Clone the repository**
 ```bash
-git clone https://github.com/ybc112/persona-fi-wallet.git
-cd persona-fi-wallet
+git clone https://github.com/yourusername/personafi.git
+cd personafi
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Environment setup**
+```bash
+cp .env.example .env.local
+```
+
+Add your environment variables:
+```env
+# Web3Auth Configuration
+NEXT_PUBLIC_WEB3AUTH_CLIENT_ID=your_web3auth_client_id
+NEXT_PUBLIC_WEB3AUTH_NETWORK=testnet
+
+# Solana Configuration
+NEXT_PUBLIC_SOLANA_RPC_URL=https://api.devnet.solana.com
+NEXT_PUBLIC_SOLANA_NETWORK=devnet
+
+# AI Services
+OPENAI_API_KEY=your_openai_api_key
+DALLE_API_KEY=your_dalle_api_key
+
+# External APIs
+COINGECKO_API_KEY=your_coingecko_key
+JUPITER_API_URL=https://quote-api.jup.ag/v6
+
+# Database
+DATABASE_URL=your_supabase_url
+DATABASE_ANON_KEY=your_supabase_anon_key
+
+# IPFS Storage
+PINATA_API_KEY=your_pinata_key
+PINATA_SECRET_KEY=your_pinata_secret
+```
+
+4. **Run development server**
+```bash
+npm run dev
+```
+
+5. **Deploy smart contracts** (Optional for development)
+```bash
+cd contracts
+anchor build
+anchor deploy --provider.cluster devnet
+```
+
+## 🎮 Usage
+
+### For AI Creators
+1. **Connect Wallet**: Use social login via Web3Auth
+2. **Create AI Personality**: Choose investment style and train through conversation
+3. **Generate Avatar**: AI automatically creates unique visual identity
+4. **Mint NFT**: Transform AI into tradable asset
+5. **List on Marketplace**: Set price and earn from usage
+
+### For Investors
+1. **Browse Marketplace**: Explore available AI personalities and their performance
+2. **Purchase/Rent AI**: Acquire usage rights for AI investment advisor
+3. **Receive Recommendations**: Get personalized investment insights
+4. **Track Performance**: Monitor AI accuracy and your returns
+5. **Trade Assets**: Buy/sell AI NFTs based on performance
+
+## 📱 Demo Walkthrough
+
+🎥 **[Watch Demo Video](https://youtu.be/demo-link)**
+
+**Live Demo**: [https://personafi-demo.vercel.app](https://personafi-demo.vercel.app)
+
+**Test Accounts**:
+- Demo wallet will be created automatically via Web3Auth
+- Use test SOL from Solana faucet for transactions
+
+## 🏆 Hackathon Submission
+
+### Track: AI-Powered Web3 Agents & Autonomous dApps
+
+**Why PersonaFi Fits**:
+- ✅ AI-driven portfolio management agents
+- ✅ Autonomous smart contract execution
+- ✅ Personalized DeFi recommendations
+- ✅ On-chain AI agents for investment automation
+
+### Technical Requirements Met:
+- ✅ MetaMask Embedded Wallet SDK integration (Web3Auth)
+- ✅ Social/email login for seedless wallet creation
+- ✅ Deployed on Solana blockchain
+- ✅ Working wallet integration in main application flow
+- ✅ Full-stack web application with React frontend
+
+## 🧪 Testing
+
+```bash
+# Run unit tests
+npm run test
+
+# Run integration tests
+npm run test:integration
+
+# Test smart contracts
+cd contracts && anchor test
+
+# E2E testing
+npm run test:e2e
+```
+
+## 📊 Performance Metrics
+
+- **AI Accuracy**: Track investment recommendation success rates
+- **User Growth**: Monitor wallet creations and active users  
+- **Trading Volume**: Measure NFT marketplace activity
+- **Revenue Distribution**: Transparent profit sharing analytics
+
+## 🗺️ Roadmap
+
+### Phase 1: MVP (Current)
+- [x] AI personality creation
+- [x] Basic market analysis
+- [x] NFT minting and trading
+- [x] Web3Auth integration
+
+### Phase 2: Enhanced Features
+- [ ] Advanced AI training algorithms
+- [ ] Multi-chain support (Ethereum, Polygon)
+- [ ] Social features and AI reputation system
+- [ ] Mobile app development
+
+### Phase 3: Ecosystem Growth
+- [ ] AI strategy tournaments
+- [ ] Institutional investor tools
+- [ ] API for third-party integrations
+- [ ] DAO governance for platform decisions
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### Development Setup
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 👥 Team
+
+- **界天日** - Full-stack Developer & AI Integration
+  - GitHub: [@ybc112](https://github.com/ybc112) 
+  - Twitter: [@界天日世](https://twitter.com/界天日世)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+
+- **Live Demo**: [https://personafi-demo.vercel.app](https://personafi-demo.vercel.app)
+- **Documentation**: [https://docs.personafi.com](https://docs.personafi.com)
+- **Twitter**: [@PersonaFi](https://twitter.com/PersonaFi)
+- **Discord**: [Join our community](https://discord.gg/personafi)
+
+## 🙏 Acknowledgments
+
+- **HackQuest** for hosting this amazing hackathon
+- **Web3Auth** for seamless wallet integration
+- **Solana Foundation** for the high-performance blockchain
+- **OpenAI** for powerful AI capabilities
+- **Metaplex** for NFT standards and tools
+
+---
+
+<div align="center">
+  <strong>Built with ❤️ for the future of AI-powered investing</strong>
+  
+  **PersonaFi - Where AI Personalities Become Investment Assets**
+</div>
